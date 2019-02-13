@@ -22,7 +22,6 @@ public class ArticleController {
 
     @RequestMapping(value = "add", method = RequestMethod.POST)
     public ResponseEntity addArticle(@RequestBody final ArticleRequest articleRequest) throws NotFoundException {
-
         articleService.saveArticle(articleConverter.convert(articleRequest));
         return ResponseEntity.ok().build();
     }

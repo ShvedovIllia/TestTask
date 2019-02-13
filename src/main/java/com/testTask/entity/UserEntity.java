@@ -27,7 +27,7 @@ public class UserEntity {
     @Column(name = "age")
     private Integer age;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
     private List<ArticleEntity> articleEntities;
 }
