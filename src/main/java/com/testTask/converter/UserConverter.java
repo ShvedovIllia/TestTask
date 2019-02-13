@@ -15,14 +15,14 @@ public class UserConverter {
 
     private final ArticleConverter articleConverter;
 
-    public UserEntity convert (UserRequest userRequest) {
+    public UserEntity convert(UserRequest userRequest) {
         UserEntity userEntity = new UserEntity();
         userEntity.setAge(userRequest.getAge());
         userEntity.setName(userRequest.getName());
         return userEntity;
     }
 
-    public UserResponse convert (UserEntity userEntity) {
+    public UserResponse convert(UserEntity userEntity) {
         UserResponse userResponse = new UserResponse();
         userResponse.setAge(userEntity.getAge());
         userResponse.setName(userEntity.getName());

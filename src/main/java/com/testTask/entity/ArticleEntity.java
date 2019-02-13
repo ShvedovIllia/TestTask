@@ -1,10 +1,10 @@
 package com.testTask.entity;
 
+import com.testTask.enums.Colors;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import com.testTask.enums.Colors;
 
 import javax.persistence.*;
 

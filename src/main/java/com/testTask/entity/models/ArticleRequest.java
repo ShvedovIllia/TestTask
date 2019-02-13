@@ -1,9 +1,9 @@
 package com.testTask.entity.models;
 
+import com.testTask.enums.Colors;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import com.testTask.enums.Colors;
 
 @Getter
 @NoArgsConstructor
