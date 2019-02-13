@@ -1,9 +1,9 @@
-package test.converter;
+package com.testTask.converter;
 
+import com.testTask.entity.UserEntity;
+import com.testTask.entity.models.UserRequest;
+import com.testTask.entity.models.UserResponse;
 import org.springframework.stereotype.Component;
-import test.entity.UserEntity;
-import test.entity.models.UserRequest;
-import test.entity.models.UserResponse;
 
 @Component
 public class UserConverter {
@@ -19,6 +19,7 @@ public class UserConverter {
         UserResponse userResponse = new UserResponse();
         userResponse.setAge(userEntity.getAge());
         userResponse.setName(userEntity.getName());
+        userResponse.setArticles(userEntity.getArticleEntities());
         return userResponse;
     }
 }

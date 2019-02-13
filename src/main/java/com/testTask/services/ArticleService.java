@@ -1,7 +1,7 @@
-package test.services;
+package com.testTask.services;
 
 import org.springframework.stereotype.Service;
-import test.entity.ArticleEntity;
+import com.testTask.entity.ArticleEntity;
 
 @Service
 public interface ArticleService {

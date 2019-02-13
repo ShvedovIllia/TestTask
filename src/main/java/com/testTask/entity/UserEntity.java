@@ -1,4 +1,4 @@
-package test.entity;
+package com.testTask.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -26,4 +26,8 @@ public class UserEntity {
 
     @Column(name = "age")
     private Integer age;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "user_id")
+    private List<ArticleEntity> articleEntities;
 }

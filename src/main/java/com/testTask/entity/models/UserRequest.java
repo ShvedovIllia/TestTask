@@ -1,4 +1,4 @@
-package test.entity.models;
+package com.testTask.entity.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

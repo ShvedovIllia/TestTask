@@ -1,10 +1,10 @@
-package test.entity.models;
+package com.testTask.entity.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import test.entity.ArticleEntity;
+import com.testTask.entity.ArticleEntity;
 
 import java.util.List;
 

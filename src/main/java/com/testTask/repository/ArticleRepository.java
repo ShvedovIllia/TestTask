@@ -1,8 +1,8 @@
-package test.repository;
+package com.testTask.repository;
 
+import com.testTask.entity.ArticleEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import test.entity.ArticleEntity;
 
 @Repository
 public interface ArticleRepository extends JpaRepository<ArticleEntity, Long> {

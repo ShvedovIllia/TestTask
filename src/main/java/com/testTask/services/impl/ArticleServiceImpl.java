@@ -1,11 +1,11 @@
-package test.services.impl;
+package com.testTask.services.impl;
 
+import com.testTask.services.ArticleService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import test.entity.ArticleEntity;
-import test.repository.ArticleRepository;
-import test.services.ArticleService;
+import com.testTask.entity.ArticleEntity;
+import com.testTask.repository.ArticleRepository;
 
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 @Service

@@ -1,14 +1,16 @@
-package test.controller;
+package com.testTask.controller;
 
+import com.testTask.converter.ArticleConverter;
+import com.testTask.entity.models.ArticleRequest;
+import com.testTask.services.impl.ArticleServiceImpl;
+import javassist.NotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import test.converter.ArticleConverter;
-import test.entity.models.ArticleRequest;
-import test.services.impl.ArticleServiceImpl;
 
 @RestController
 @RequestMapping(value = "article/")
@@ -19,7 +21,7 @@ public class ArticleController {
     private final ArticleConverter articleConverter;
 
     @RequestMapping(value = "add", method = RequestMethod.POST)
-    public ResponseEntity addArticle(ArticleRequest articleRequest) {
+    public ResponseEntity addArticle(@RequestBody final ArticleRequest articleRequest) throws NotFoundException {
 
         articleService.saveArticle(articleConverter.convert(articleRequest));
         return ResponseEntity.ok().build();
